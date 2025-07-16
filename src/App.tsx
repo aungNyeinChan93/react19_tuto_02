@@ -1,5 +1,6 @@
 import React from "react";
-import Theme from "./components/Theme";
+import TestThemeStore from "./components/TestThemeStore";
+// import Theme from "./components/Theme";
 // import TestReducer from "./components/TestReducer";
 // import TestReduxAuth from "./components/TestReduxAuth";
 // import TestPost from "./components/TestPost";
@@ -29,8 +30,9 @@ const App = () => {
         {/* <TestTodo /> */}
         {/* <TestState /> */}
         {/* <TestReducer /> */}
+        {/* <Theme /> */}
 
-        <Theme />
+        <TestThemeStore />
       </section>
     </React.Fragment>
   );
