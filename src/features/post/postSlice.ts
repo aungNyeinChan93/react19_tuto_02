@@ -8,6 +8,8 @@ export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
 });
 
 
+
+
 export interface Post {
     id: number,
     title: string,
