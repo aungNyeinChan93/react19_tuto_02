@@ -1,5 +1,8 @@
 import React from "react";
-import TestThemeStore from "./components/TestThemeStore";
+import TestQuotertk from "./components/TestQuoteRtk";
+// import TestThemeStore from "./components/TestThemeStore";
+// import TestPost from "./components/TestPost";
+// import TestPostRtk from "./components/TestPostRtk";
 // import Theme from "./components/Theme";
 // import TestReducer from "./components/TestReducer";
 // import TestReduxAuth from "./components/TestReduxAuth";
@@ -31,8 +34,10 @@ const App = () => {
         {/* <TestState /> */}
         {/* <TestReducer /> */}
         {/* <Theme /> */}
+        {/* <TestThemeStore /> */}
+        {/* <TestPostRtk /> */}
 
-        <TestThemeStore />
+        <TestQuotertk />
       </section>
     </React.Fragment>
   );
