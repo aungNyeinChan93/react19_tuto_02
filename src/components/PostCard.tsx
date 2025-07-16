@@ -1,5 +1,8 @@
 import React from "react";
 import type { Post } from "../features/post/postSlice";
+import { removePost } from "../features/post/postSlice";
+import { useAppDispatch } from "../hook";
+import type { AppDispatch } from "../store";
 
 interface PosdCardProps {
   post: Post;
@@ -7,6 +10,7 @@ interface PosdCardProps {
 const PostCard: React.FC<PosdCardProps> = ({
   post: { id, title, body, reactions, views },
 }) => {
+  const appDispatch: AppDispatch = useAppDispatch();
   return (
     <React.Fragment>
       <section className="">
@@ -72,6 +76,13 @@ const PostCard: React.FC<PosdCardProps> = ({
 
               <dd className="text-xs text-gray-700">{reactions.dislikes}</dd>
               <dd className="text-xs text-gray-700">{reactions.likes}</dd>
+
+              <button
+                type="button"
+                onClick={() => appDispatch(removePost(Number(id)))}
+              >
+                Delete
+              </button>
             </div>
           </dl>
         </a>

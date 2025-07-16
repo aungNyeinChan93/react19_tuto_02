@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import counterSlice from "./features/counter/counterSlice";
 import authSlice from "./features/auth/authSlice";
 import postSlice from "./features/post/postSlice";
+import themeSlice from "./features/Theme/themeSlice";
 
 
 const store = configureStore({
@@ -9,6 +10,7 @@ const store = configureStore({
         counter: counterSlice.reducer,
         auth: authSlice.reducer,
         posts: postSlice.reducer,
+        theme: themeSlice.reducer
     }
 });
 
