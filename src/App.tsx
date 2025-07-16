@@ -1,7 +1,8 @@
 import React from "react";
 // import TestReduxAuth from "./components/TestReduxAuth";
 // import TestPost from "./components/TestPost";
-import TestTodo from "./components/TestTodo";
+// import TestTodo from "./components/TestTodo";
+import TestState from "./components/TestState";
 // import TestReduxCounter from "./components/TestReduxCounter";
 // import TestAuth from "./components/TestAuth";
 // import TestTheme from "./components/TestTheme";
@@ -23,7 +24,8 @@ const App = () => {
         {/* <TestReduxCounter /> */}
         {/* <TestReduxAuth /> */}
         {/* <TestPost /> */}
-        <TestTodo />
+        {/* <TestTodo /> */}
+        <TestState />
       </section>
     </React.Fragment>
   );

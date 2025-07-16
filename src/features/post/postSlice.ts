@@ -7,9 +7,6 @@ export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
     return posts
 });
 
-
-
-
 export interface Post {
     id: number,
     title: string,
@@ -38,9 +35,7 @@ const initialState: IntialState = {
 const postSlice = createSlice({
     name: 'posts',
     initialState,
-    reducers: {
-
-    },
+    reducers: {},
     extraReducers: (builder) => {
         builder
             .addCase(fetchPosts.pending, (state) => {
