@@ -1,5 +1,7 @@
 import React from "react";
-import TestAuth from "./components/TestAuth";
+import TestReduxAuth from "./components/TestReduxAuth";
+// import TestReduxCounter from "./components/TestReduxCounter";
+// import TestAuth from "./components/TestAuth";
 // import TestTheme from "./components/TestTheme";
 // import TestCounter from "./components/TestCounter";
 // import TestForm from "./components/TestForm";
@@ -14,10 +16,11 @@ const App = () => {
         {/* <TestReactHookForm /> */}
         {/* <TestForm /> */}
         {/* <TestTheme /> */}
-
         {/* <TestCounter /> */}
+        {/* <TestAuth /> */}
+        {/* <TestReduxCounter /> */}
 
-        <TestAuth />
+        <TestReduxAuth />
       </section>
     </React.Fragment>
   );
