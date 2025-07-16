@@ -6,10 +6,22 @@ const TestState = () => {
     email: "default",
     password: "123123",
   });
+
+  const [theme, setTheme] = useState<string>("light");
+
   return (
     <React.Fragment>
       <section>
-        {formState.name} || {formState.email} |{formState.password}
+        {formState.name} || {formState.email} |{formState.password} |{theme}
+        <button
+          type="button"
+          className="p-3 bg-red-50 rounde"
+          onClick={() =>
+            setTheme((pre) => (pre === "light" ? "dark" : "light"))
+          }
+        >
+          Change Theme
+        </button>
         <form action="">
           <input
             type="text"
