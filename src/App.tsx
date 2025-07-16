@@ -1,5 +1,7 @@
 import React from "react";
-import TestQuotertk from "./components/TestQuoteRtk";
+// import TestQuotertk from "./components/TestQuoteRtk";
+import TestPostRtk from "./components/TestPostRtk";
+// import TestSinglePostRtk from "./components/TestSinglePostRtl";
 // import TestThemeStore from "./components/TestThemeStore";
 // import TestPost from "./components/TestPost";
 // import TestPostRtk from "./components/TestPostRtk";
@@ -35,9 +37,10 @@ const App = () => {
         {/* <TestReducer /> */}
         {/* <Theme /> */}
         {/* <TestThemeStore /> */}
-        {/* <TestPostRtk /> */}
+        {/* <TestQuotertk /> */}
+        <TestPostRtk />
 
-        <TestQuotertk />
+        {/* <TestSinglePostRtk /> */}
       </section>
     </React.Fragment>
   );
