@@ -11,7 +11,7 @@ const TestReduxAuth = () => {
     appDispatch(
       setUser({ name: "aung", email: "aung@123", password: "123123123" })
     );
-  }, []);
+  }, [appDispatch]);
   return (
     <React.Fragment>
       <section>
