@@ -4,7 +4,7 @@ import { useGetQuotesQuery } from "../service/quoteApi";
 
 const TestQuotertk = () => {
   const { data, isLoading } = useGetQuotesQuery();
-  console.log(data);
+  //   console.log(data);
 
   if (isLoading) return <>Loading. . .</>;
   return (
